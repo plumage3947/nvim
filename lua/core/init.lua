@@ -13,9 +13,9 @@ if (vim.fn.has('termguicolors') == 1) then
 end
 -- tabs
 vim.opt.autoindent  = true
-vim.opt.tabstop     = 4
-vim.opt.shiftwidth  = 4
-vim.opt.softtabstop = 4
+vim.opt.tabstop     = 2
+vim.opt.shiftwidth  = 2
+vim.opt.softtabstop = 2
 vim.opt.mouse       = 'a'
 vim.opt.expandtab   = true
 vim.opt.autowrite   = false
