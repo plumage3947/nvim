@@ -8,7 +8,7 @@ endif
 
 if exists("g:neovide")
     " Neovide config
-	let g:neovide_refresh_rate=24	" come on it's just a text editor
+	let g:neovide_refresh_rate=60
 	let g:neovide_transparency=1.0
 	let g:neovide_scroll_animation_length = 0.3
 	let g:neovide_remember_window_size = v:true
@@ -20,6 +20,7 @@ if exists("g:neovide")
 	let g:neovide_cursor_antialiasing=v:false	" i dont need it
 	let g:neovide_cursor_vfx_mode = "wireframe"
 	let g:neovide_remember_window_size = v:true
+  let g:blamer_enabled = 1
 endif
 
 autocmd FileType markdown setlocal spell

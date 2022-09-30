@@ -8,6 +8,9 @@ return require('packer').startup(function()
 	use 'lewis6991/impatient.nvim'
 	use 'nathom/filetype.nvim'
 
+  -- git blamer
+  use 'APZelos/blamer.nvim'
+
 	-- buffer
 	use {
 		'akinsho/bufferline.nvim',
