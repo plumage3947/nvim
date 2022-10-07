@@ -1,6 +1,6 @@
 local M = {}
 function M.config()
-	-- nvim-tree config
+	-- nvim-tree config (文件树)
 	require 'nvim-tree'.setup {
 		disable_netrw        = true,
 		hijack_netrw         = true,

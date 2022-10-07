@@ -1,3 +1,4 @@
+-- 配置参考：https://blog.csdn.net/JasonDing1354/article/details/45372007
 local function set_bg_light()
 	vim.cmd('set background=light')
 	local colors_name = vim.g.colors_name
@@ -22,7 +23,7 @@ vim.keymap.set('n', '<leader>vd', set_bg_dark)
 vim.keymap.set('n', '<leader>', ':')
 -- f: file tree
 vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>ft', ':NvimTreeToggle<cr>')
+vim.keymap.set('n', '<leader>fs', ':NvimTreeToggle<cr>', opt)
 vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
 -- y: telescope
 vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
