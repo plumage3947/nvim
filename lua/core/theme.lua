@@ -51,7 +51,7 @@
 --vim.cmd("colorscheme edge")
 
 -- github
-vim.cmd("colorscheme github_dark_default")
+vim.cmd("colorscheme desert")
 
 -- oxocarbon
 -- vim.cmd("colorscheme oxocarbon-lua")
