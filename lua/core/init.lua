@@ -53,7 +53,7 @@ require('image').setup {
 -- plugins without extra configs are configured directly here
 require("impatient")
 
--- require("configs.autocomplete").config()
+require("configs.autocomplete").config()
 require("configs.symbols_outline").config()
 require("configs.statusline").config()
 require("configs.filetree").config()
