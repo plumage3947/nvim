@@ -9,7 +9,16 @@
 </p>
 
 ## Setup
-0. Use the latest version of NVIM
+0. Use at least version 0.7.2
+  ```
+   curl -LO https://github.com/neovim/neovim/releases/download/v0.7.2/nvim.appimage;
+   chmod u+x nvim.appimage;
+   ./nvim.appimage --appimage-extract;
+   ./squashfs-root/AppRun --version; sudo mv squashfs-root /;
+   sudo rm /usr/bin/nvim;
+   sudo yum install -y neovim python3-neovim;
+   sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+  ```
 1. This setup uses packer.nvim for the package manager, so first install packer.nvim by following the [official instructions](https://github.com/wbthomason/packer.nvim#quickstart)
 2. Clone this repo into `~/.config/nvim`:
 ```
@@ -30,13 +39,3 @@ Alternatively, in `lua/configs/treesitter.lua`, line `6`, you can have a list of
 Note that the config uses `;` as the leader key by default, you can of course change it in `lua/core/keymaps.lua`, line `1`<br>
 Most keymaps in this setup are what I call declarative keymaps, for example, everything related to terminal emulator starts with `;t`, so `;tt` means "terminal toggle", and `;tn` means "terminal new"<br>
 Btw, tryout `;lb` in files with LSP support, it's really fancy!
-
-## Contributing
-**Having troubles**<br>
-If you have issues while installing  or using my this setup, report an issue, 
-don't just DM me on social media because others may run into the same problem and they can use the existing issues as a reference<br>
-Discussions could be in either English or Chinese, although English is preferred<br>
-
-**Adding more things**<br>
-For now, you don't, this is *my personal config*, although do leave suggestions if you have any
-
