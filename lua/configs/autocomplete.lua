@@ -18,17 +18,19 @@ function M.config()
 			end,
 		},
 		mapping = {
-			['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
-			['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
-			['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-			['<C-y>'] = cmp.config.disable,
-			['<C-e>'] = cmp.mapping({
-				i = cmp.mapping.abort(),
-				c = cmp.mapping.close(),
-			}),
-			-- Accept currently selected item...
-			-- Set `select` to `false` to only confirm explicitly selected items:
-			['<CR>'] = cmp.mapping.confirm({ select = true }),
+      ['<C-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
+      ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
+      ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+      ['<C-y>'] = cmp.config.disable,
+      ['<C-e>'] = cmp.mapping({
+        i = cmp.mapping.abort(),
+        c = cmp.mapping.close(),
+      }),
+      -- 选择上/下一个
+      ['<C-k>'] = cmp.mapping.select_prev_item(),
+      ['<C-j>'] = cmp.mapping.select_next_item(),
+      -- 选择当前项进行补全
+      ['<CR>'] = cmp.mapping.confirm({ select = true }),
 		},
 		sources = cmp.config.sources({
 			{ name = 'nvim_lsp' },
