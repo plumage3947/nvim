@@ -4,10 +4,10 @@
 
 -- sonokai
 --sonokai styles: default, atlantis, andromeda, shusia, maia, espresso
---vim.g.sonokai_style = 'default'
---vim.g.sonokai_enable_italic = 0
---vim.g.sonokai_disable_italic_comment = 0
---vim.cmd('colorscheme sonokai')
+vim.g.sonokai_style = 'default'
+vim.g.sonokai_enable_italic = 0
+vim.g.sonokai_disable_italic_comment = 0
+vim.cmd('colorscheme sonokai')
 
 -- tokyo night
 -- vim.g.tokyodark_transparent_background = false
@@ -51,7 +51,7 @@
 --vim.cmd("colorscheme edge")
 
 -- github
-vim.cmd("colorscheme desert")
+-- vim.cmd("colorscheme desert")
 
 -- oxocarbon
 -- vim.cmd("colorscheme oxocarbon-lua")
