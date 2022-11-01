@@ -21,6 +21,14 @@ vim.opt.expandtab   = true
 vim.opt.autowrite   = false
 vim.opt.formatoptions = ''
 
+-- 打开文件时，光标恢复到上次关闭的位置
+vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+    pattern = { "*" },
+    callback = function()
+        vim.api.nvim_exec('silent! normal! g`"zv', false)
+    end,
+})
+
 require("core.keymaps")
 --require("core.dvorak")	-- delete this line if you don't like using DVORAK
 require("core.plugins")
