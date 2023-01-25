@@ -26,9 +26,10 @@ vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>fs', ':NvimTreeToggle<cr>', opt) --*开关file tree
 vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
 -- y: telescope
-vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
-vim.keymap.set('n', '<F10>', function() require 'telescope.builtin'.git_files {} end)
-vim.keymap.set('n', '<F11>', function() require 'telescope.builtin'.buffers {} end)
+vim.keymap.set('n', '<leader>sf', function() require 'telescope.builtin'.find_files {} end)
+vim.keymap.set('n', '<leader>s', function() require 'telescope.builtin'.live_grep {} end)
+vim.keymap.set('n', '<leader>sg', function() require 'telescope.builtin'.git_files {} end)
+vim.keymap.set('n', '<leader>sb', function() require 'telescope.builtin'.buffers {} end)
 vim.keymap.set({ 'n', 'i' }, '<C-p>', function() require 'telescope.builtin'.registers {} end)
 -- w: window
 vim.keymap.set('n', '<leader>w1', '<c-w>o')
@@ -46,15 +47,15 @@ vim.keymap.set('n', '<leader>bn', ':bn<cr>')  --*下一个标签页
 vim.keymap.set('n', '<leader>bp', ':bp<cr>')  --*上一个
 vim.keymap.set('n', '<leader>bd', ':Bdelete<cr>')  --*删除当前buffer
 vim.keymap.set("n", "<leader>bo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true}) --*关闭其他标签页
-vim.keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", {noremap = true, silent = true})  --跳转到第1个buffer页
-vim.keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
-vim.keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b1", ":BufferLineGoToBuffer 1<CR>", {noremap = true, silent = true})  --跳转到第1个buffer页
+vim.keymap.set("n", "<leader>b2", ":BufferLineGoToBuffer 2<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b3", ":BufferLineGoToBuffer 3<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b4", ":BufferLineGoToBuffer 4<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b5", ":BufferLineGoToBuffer 5<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b6", ":BufferLineGoToBuffer 6<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>b9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
 
 -- p: plugins
 vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>') --*安装packer
