@@ -25,12 +25,14 @@ vim.keymap.set('n', '<leader>', ':')
 vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
 vim.keymap.set('n', '<leader>fs', ':NvimTreeToggle<cr>', opt) --*开关file tree
 vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
--- y: telescope
+
+-- s: telescope
 vim.keymap.set('n', '<leader>sf', function() require 'telescope.builtin'.find_files {} end)
-vim.keymap.set('n', '<leader>s', function() require 'telescope.builtin'.live_grep {} end)
+vim.keymap.set('n', '<leader>se', function() require 'telescope.builtin'.live_grep {} end)
 vim.keymap.set('n', '<leader>sg', function() require 'telescope.builtin'.git_files {} end)
 vim.keymap.set('n', '<leader>sb', function() require 'telescope.builtin'.buffers {} end)
 vim.keymap.set({ 'n', 'i' }, '<C-p>', function() require 'telescope.builtin'.registers {} end)
+
 -- w: window
 vim.keymap.set('n', '<leader>w1', '<c-w>o')
 vim.keymap.set('n', '<leader>wx', ':x<cr>')
