@@ -23,7 +23,7 @@ vim.keymap.set('n', '<leader>vd', set_bg_dark)
 vim.keymap.set('n', '<leader>', ':')
 -- f: file tree
 vim.keymap.set('n', '<F3>', ':NvimTreeToggle<cr>')
-vim.keymap.set('n', '<leader>fs', ':NvimTreeToggle<cr>', opt)
+vim.keymap.set('n', '<leader>fs', ':NvimTreeToggle<cr>', opt) --*开关file tree
 vim.keymap.set('n', '<leader>ff', ':NvimTreeFocus<cr>')
 -- y: telescope
 vim.keymap.set('n', '<F9>', function() require 'telescope.builtin'.find_files {} end)
@@ -40,13 +40,26 @@ vim.keymap.set('n', '<m-9>', '<c-w><')
 vim.keymap.set('n', '<m-0>', '<c-w>>')
 vim.keymap.set('n', '<m-->', '<c-w>-')
 vim.keymap.set('n', '<m-=>', '<c-w>+')
+
 -- b: buffer
-vim.keymap.set('n', '<leader>bn', ':bn<cr>')
-vim.keymap.set('n', '<leader>bp', ':bp<cr>')
-vim.keymap.set('n', '<leader>bd', ':Bdelete<cr>')
+vim.keymap.set('n', '<leader>bn', ':bn<cr>')  --*下一个标签页
+vim.keymap.set('n', '<leader>bp', ':bp<cr>')  --*上一个
+vim.keymap.set('n', '<leader>bd', ':Bdelete<cr>')  --*删除当前buffer
+vim.keymap.set("n", "<leader>bo", ":BufferLineCloseLeft<CR>:BufferLineCloseRight<CR>", {noremap = true, silent = true}) --*关闭其他标签页
+vim.keymap.set("n", "<leader>1", ":BufferLineGoToBuffer 1<CR>", {noremap = true, silent = true})  --跳转到第1个buffer页
+vim.keymap.set("n", "<leader>2", ":BufferLineGoToBuffer 2<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>3", ":BufferLineGoToBuffer 3<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>4", ":BufferLineGoToBuffer 4<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>5", ":BufferLineGoToBuffer 5<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>6", ":BufferLineGoToBuffer 6<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>7", ":BufferLineGoToBuffer 7<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>8", ":BufferLineGoToBuffer 8<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
+
 -- p: plugins
-vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>')
+vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>') --*安装packer
 vim.keymap.set('n', '<leader>pc', ':PackerClean<cr>')
+
 -- s: search
 vim.keymap.set('n', '<leader>ss', '/')
 vim.keymap.set('n', '<leader>sw', '/\\<lt>\\><left><left>')
@@ -104,3 +117,6 @@ vim.keymap.set('n', '<leader>hR', ':Gitsigns reset_buffer')
 vim.keymap.set('n', '<leader>hb', ':Gitsigns blame_line<cr>')
 vim.keymap.set('n', '<leader>hd', ':Gitsigns diffthis<cr>')
 vim.keymap.set('n', '<leader>hs', ':<C-U>Gitsigns select_hunk<CR>')
+
+-- git blamer
+vim.keymap.set('n', '<leader>bt', ':BlamerToggle') --*开关git blamer
