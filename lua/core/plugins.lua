@@ -79,7 +79,8 @@ return require('packer').startup(function()
 	use "lukas-reineke/indent-blankline.nvim"
 
 	-- startup screen
-	use 'leslie255/aleph-nvim'
+	-- use 'leslie255/aleph-nvim'
+  use 'plumage3947/nvim-boarding'
 
 	-- english grammar check
 	use 'rhysd/vim-grammarous'
