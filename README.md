@@ -1,13 +1,13 @@
 # My personal modern NeoVim config
 
 <p align="center">
-<img src="https://i.imgur.com/f92Lc7Q.png" alt="Title screen" width="70%"/><br>
+<img src="https://github.com/plumage3947/nvim/blob/main/land_page.jpg" alt="Title screen" width="70%"/><br>
 </p>
 
 ## Setup
-0. Use at least version 0.7.2
+0. Use at least version 0.7.2 (now using 0.8.3)
   ```
-   curl -LO https://github.com/neovim/neovim/releases/download/v0.7.2/nvim.appimage;
+   curl -LO https://github.com/neovim/neovim/releases/download/v0.8.3/nvim.appimage;
    chmod u+x nvim.appimage;
    ./nvim.appimage --appimage-extract;
    ./squashfs-root/AppRun --version; sudo mv squashfs-root /;
