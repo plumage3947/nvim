@@ -30,8 +30,8 @@ vim.api.nvim_create_autocmd({ "BufReadPost" }, {
 })
 
 require("core.keymaps")
---require("core.dvorak")	-- delete this line if you don't like using DVORAK
-require("core.plugins")
+--require("dvorak")	-- delete this line if you don't like using DVORAK
+require ("core.lazynvim-init")  -- lazy nvim to manage plugins
 require("core.gui")
 -- disable some useless standard plugins to save startup time
 -- these features have been better covered by plugins
@@ -59,7 +59,7 @@ require('image').setup {
 
 -- Load plugin configs
 -- plugins without extra configs are configured directly here
-require("impatient")
+require("configs.impatient").config()
 
 require("configs.autocomplete").config()
 require("configs.symbols_outline").config()

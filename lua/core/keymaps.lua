@@ -60,8 +60,8 @@ vim.keymap.set("n", "<leader>b8", ":BufferLineGoToBuffer 8<CR>", {noremap = true
 vim.keymap.set("n", "<leader>b9", ":BufferLineGoToBuffer 9<CR>", {noremap = true, silent = true})
 
 -- p: plugins
-vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>') --*安装packer
-vim.keymap.set('n', '<leader>pc', ':PackerClean<cr>')
+-- vim.keymap.set('n', '<leader>pi', ':PackerInstall<cr>') --*安装packer
+-- vim.keymap.set('n', '<leader>pc', ':PackerClean<cr>')
 
 -- s: search
 vim.keymap.set('n', '<leader>ss', '/')
