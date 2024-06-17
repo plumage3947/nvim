@@ -79,7 +79,7 @@ vim.keymap.set('n', '<leader>ld', ':Lspsaga preview_definition<cr>')
 vim.keymap.set('n', '<leader>lr', ':Lspsaga rename<cr>')
 vim.keymap.set('n', '<leader>lh', vim.lsp.buf.signature_help)
 vim.keymap.set('n', '<leader>la', vim.lsp.buf.code_action)
-vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format) -- formatting before v0.9
 vim.keymap.set('n', '<leader>lb', ':SymbolsOutline<cr>')
 vim.keymap.set('n', '<leader>la', ':Lspsaga code_action<cr>')
 vim.keymap.set('n', '<leader>lu', ':Lspsaga lsp_finder<cr>')

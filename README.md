@@ -5,9 +5,9 @@
 </p>
 
 ## Setup
-0. Use at least version 0.7.2 (now using 0.8.3)
+0. Use at least version 0.9.5 (now using 0.9.5)
   ```
-   curl -LO https://github.com/neovim/neovim/releases/download/v0.8.3/nvim.appimage;
+   curl -LO https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage;
    chmod u+x nvim.appimage;
    ./nvim.appimage --appimage-extract;
    ./squashfs-root/AppRun --version; sudo mv squashfs-root /;
