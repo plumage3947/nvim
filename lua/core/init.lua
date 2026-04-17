@@ -61,11 +61,11 @@ require('image').setup {
 -- plugins without extra configs are configured directly here
 require("configs.impatient").config()
 
-require("configs.autocomplete").config()
+--require("configs.autocomplete").config()
 require("configs.symbols_outline").config()
 require("configs.statusline").config()
 require("configs.filetree").config()
-require("configs.treesitter").config()
+--require("configs.treesitter").config()
 require("configs.boarding").config()
 require("configs.git").config()
 require("configs.bufferline").config()
